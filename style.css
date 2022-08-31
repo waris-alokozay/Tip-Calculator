@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  background-color: hsl(185, 41%, 84%);
+}
+
+.spliterText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5em;
+  font-size: larger;
+  color: hsl(186, 26%, 32%);
+  letter-spacing: 8px;
+}
+
+.billBox {
+  width: 700px;
+  height: 360px;
+  background-color: #fff;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+.totalBill {
+  width: 320px;
+  height: 310px;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 10px;
+}
+
+#bill-ammount > p,
+#tip-btns > p,
+#people-inp > p {
+  color: hsl(186, 14%, 43%);
+  font-size: small;
+}
+#bill-ammount > input {
+  background-image: url(./images/icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-position: 15px;
+}
+#people {
+  background-image: url(./images/icon-person.svg);
+  background-repeat: no-repeat;
+  background-position: 15px;
+}
+
+#bill-ammount > input,
+#people {
+  outline: none;
+  border: none;
+  background-color: hsl(189, 41%, 97%);
+  width: 300px;
+  height: 35px;
+  border-radius: 4px;
+  margin: 5px 0;
+  font-size: 24px;
+  padding: 0 15px;
+  font-family: "Space Mono", monospace;
+  color: hsl(183, 100%, 15%);
+  text-align: right;
+}
+#bill-ammount > input:focus,
+#people:focus {
+  outline: solid hsl(172, 67%, 45%);
+}
+#people::placeholder,
+#bill-ammount > input::placeholder {
+  color: hsl(185, 41%, 84%);
+}
+
+.tips {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 10px;
+  column-gap: 10px;
+  margin: 10px 0;
+}
+.five,
+.ten,
+.fifteen,
+.twinty-five,
+.fifty {
+  width: 90px;
+  background-color: hsl(183, 100%, 15%);
+  font-size: 15pt;
+  color: #fff;
+  border-radius: 4px;
+  text-align: center;
+  padding: 3px;
+  cursor: pointer;
+}
+.custom {
+  text-align: center;
+  font-size: 14pt;
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(186, 14%, 43%);
+  border-radius: 4px;
+  padding: 3px 0;
+}
+.five:hover,
+.ten:hover,
+.fifteen:hover,
+.twinty-five:hover,
+.fifty:hover {
+  background-color: hsl(172, 67%, 45%);
+}
+
+.five:focus,
+.ten:focus,
+.fifteen:focus,
+.twinty-five:focus,
+.fifty:focus {
+  background-color: hsl(172, 67%, 45%);
+}
+
+#tip-btns {
+  margin: 25px 0;
+}
+#people-inp {
+  margin: 25px 0;
+}
+
+.total-amount,
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  color: #fff;
+  margin: 0 10px;
+}
+#total-text p:last-child {
+  color: hsl(184, 14%, 56%);
+  font-size: small;
+}
+
+#total-amount-text p:last-child {
+  color: hsl(184, 14%, 56%);
+  font-size: small;
+}
+
+#tip-amount,
+#total-price-total {
+  color: hsl(172, 67%, 45%);
+}
+#reset-btn {
+  width: 263px;
+  border-radius: 3px;
+  background-color: hsl(172, 67%, 45%);
+  margin: auto;
+  margin: 70px 30px;
+  text-align: center;
+  padding: 8px;
+  color: hsl(183, 100%, 15%);
+  cursor: pointer;
+}
+#reset-btn:hover {
+  background-color: hsl(180, 57%, 74%);
+}
+.attribution {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  margin-top: 40px;
+  color: hsl(187, 98%, 47%);
+}
+
+.custom p:hover {
+  outline: solid hsl(172, 67%, 45%);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 415px) {
+  .billBox {
+    max-width: 350px;
+    height: 690px;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+  }
+  .totalBill {
+    width: 320px;
+    height: 310px;
+    align-items: center;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+    margin-left: -10px;
+  }
+  .attribution {
+    font-size: small;
+    padding: 10px 20px;
+  }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="spliterText">
+        <span>SPLI</span>
+        <span>TTER</span>
+      </div>
+      <div class="billBox">
+        <div class="ammount">
+          <div id="bill-ammount">
+            <p>Bill</p>
+            <input type="text" id="bill-input" placeholder="0" />
+          </div>
+          <div id="tip-btns">
+            <p>Select tip %</p>
+            <div class="tips">
+              <div class="five">
+                <p>5%</p>
+              </div>
+              <div class="ten">
+                <p>10%</p>
+              </div>
+              <div class="fifteen">
+                <p>15%</p>
+              </div>
+              <div class="twinty-five">
+                <p>25%</p>
+              </div>
+              <div class="fifty">
+                <p>50%</p>
+              </div>
+              <div class="custom">
+                <!-- <input type="text" id="costum" placeholder="Costum" /> -->
+                <p>Costum</p>
+              </div>
+            </div>
+          </div>
+          <div id="people-inp">
+            <p>Number of People</p>
+            <input type="text" id="people" placeholder="0" />
+          </div>
+        </div>
+        <div class="totalBill">
+          <div class="total-amount">
+            <div id="total-amount-text">
+              <p>Tip Amount</p>
+              <p>/ person</p>
+            </div>
+
+            <div class="total-amount-price">
+              <h1 id="tip-amount">$0.00</h1>
+            </div>
+          </div>
+          <div class="total">
+            <div id="total-text">
+              <p>Total</p>
+              <p>/ person</p>
+            </div>
+
+            <div class="total-price">
+              <h1 id="total-price-total">$0.00</h1>
+            </div>
+          </div>
+          <div id="reset-btn">
+            <p>RESET</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Coded by
+      <a
+        href="https://www.instagram.com/p/ChbxcT2JnvQmIET3zlxLyPv3sstS64D1ptwcRM0/
+"
+        >Waris Alokozay</a
+      >.
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
+
+<!-- Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
+    person Total / person Reset -->
